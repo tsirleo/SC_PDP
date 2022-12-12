@@ -31,6 +31,7 @@ OMP_NUM_THREADS=N
 /polusfs/lsf/openmp/launchOpenMP.py ./gauss
 ```
 Где ***M*** - это количество ядер, а ***N*** - количество используемых нитей.
+
 **2. Постановка задачи в очередь**
 ```
 bsub < OMP_runScript.lsf
@@ -62,6 +63,7 @@ mpixlc parallel_gauss_mpi.c -o gauss
 mpiexec ./gauss
 ```
 Где ***N*** - это количество ядер(процессов), а ***time*** - время выполнения задачи (тайм-аут).
+
 **2. Постановка задачи в очередь**
 ```
 bsub < MPI_runScript.lsf
